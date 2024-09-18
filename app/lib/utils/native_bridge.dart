@@ -29,6 +29,9 @@ class NativeBridge {
 
   void displayNetworkChangeSnack(MethodCall call) {
     bool isOffline = call.arguments;
-    Get.snackbar('Network change', isOffline ? "You're offline" : "Reconected");
+    if (isOffline) {
+      Get.snackbar('Network change', "You're offline");
+    }
+    
   }
 }
