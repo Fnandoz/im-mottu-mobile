@@ -1,16 +1,36 @@
-# marvel_app
+# Teste Mottu
 
-A new Flutter project.
+### Checklist
 
-## Getting Started
+- [x] Etapas iniciais 
 
-This project is a starting point for a Flutter application.
+- [x] Nome do package `com.mottu.marvel`
 
-A few resources to get you started if this is your first Flutter project:
+- [x] Mostrar a listagem dos personagens (imagem e nome)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [x] Ação de clique nos cards da listagem e exibir os detalhes (imagem, nome e descrição)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [x] Utilizar Getx.
+
+- [x] Criar channel em Swift (iOS)
+
+- [x] Uso da arquitetura MVC
+
+- [ ] Configurar Firebase crashlytics.
+
+- [ ] Guardar em cache as consultas realizadas na API Marvel;
+
+- [ ] Criar um filtro para a listagem;
+
+- [ ] Criar uma Splashscreen customizada;
+
+- [ ] Limpar cache de consultas no fechamento do APP;
+
+- [ ] Ciar uma paginação da listagem;
+
+- [ ] Ação de clique nos cards da listagem e exibir os detalhes (imagem, nome, descrição e personagens relacionados);
+
+- [ ] Ação de clique nos personagens relacionados e exibir os detalhes (imagem, nome, descrição e personagens relacionados);
+ 
+
+
