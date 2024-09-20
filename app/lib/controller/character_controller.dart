@@ -11,13 +11,19 @@ class CharacterController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    fetchCharactersData();
+    fetchCharactersData(null);
   }
 
-  void fetchCharactersData() async {
+  void fetchCharactersData(String? nameStartsWith) async {
+    List<Character> characterList = [];
     try {
-      final characterList = await apiServices.fetchCharacters();
-      characters.assignAll(characterList);
+      if (nameStartsWith == null || nameStartsWith.isEmpty) {
+        characterList = await apiServices.fetchCharacters();
+        characters.assignAll(characterList);
+      } else {
+        characterList = await apiServices.fetchCharactersNameStartsWith(nameStartsWith);
+        characters.assignAll(characterList);
+      }
     } catch (e) {
       print('Failed to load characters $e');
     }
